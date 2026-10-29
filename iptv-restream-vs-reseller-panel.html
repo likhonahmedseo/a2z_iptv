@@ -1,0 +1,1938 @@
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "TechArticle",
+            "@id": "https://a2ziptv.net/iptv-restream-vs-reseller-panel/#article",
+            "headline": "IPTV Restream vs Reseller Panel",
+            "description": "IPTV restream provides source access for a delivery workflow you operate or contract. A hosted reseller panel lets you create customer subscriptions on a supplier's platform, often using credits.",
+            "url": "https://a2ziptv.net/iptv-restream-vs-reseller-panel/",
+            "datePublished": "2026-10-25T10:00:00+00:00",
+            "dateModified": "2026-10-25T10:00:00+00:00",
+            "publisher": {
+                "@type": "Organization",
+                "name": "A2Z IPTV",
+                "url": "https://a2ziptv.net/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://a2ziptv.net/wp-content/uploads/2025/11/Icon.svg"
+                }
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "A2Z IPTV Technical Operations Team"
+            },
+            "mainEntityOfPage": "https://a2ziptv.net/iptv-restream-vs-reseller-panel/"
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://a2ziptv.net/iptv-restream-vs-reseller-panel/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can a Seller Use Both Models?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. A seller could use hosted reseller access for one service and a separately operated delivery workflow for another. This is a possible arrangement, subject to each agreement. Keep account permissions, source allowances, costs, and support responsibilities separate. It is not confirmation of an A2Z combined package."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Changing Models Preserve Customer Accounts?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Account portability is not automatic. Confirm export permissions, supported import fields, subscription expiry handling, and any customer login changes. Some migrations may require new credentials or device setup. Plan the transition from the actual platforms' documented capabilities before promising customers continuity."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can a Managed Contractor Run the Delivery System?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, delivery work can be contracted. Define responsibility for configuration, monitoring, security, incidents, and recovery in the agreement. A managed arrangement does not remove the need to check source terms or identify responsibility for customer accounts and supplier escalation."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does an M3U Link Identify the Business Model?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. M3U is a playlist format; Xtream-style login is an access workflow. Neither establishes ownership of delivery infrastructure or customer-management permissions. Inspect the service scope and account role. RFC 8216 describes HLS playlist and delivery behavior, rather than reseller billing or business ownership."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
+
+<!-- Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    :root {
+        --dark: #0b0d10;
+        --dark-elevated: #111419;
+        --card: #15181e;
+        --card-light: #1c2027;
+        --card-hover: #222730;
+        --line: #262b33;
+        --line-light: rgba(255, 255, 255, 0.08);
+        --red: #e50914;
+        --red-hover: #c10710;
+        --red-glow: rgba(229, 9, 20, 0.4);
+        --red-subtle: rgba(229, 9, 20, 0.12);
+        --gold: #ffc107;
+        --green: #22c55e;
+        --sky: #38bdf8;
+        --text-heading: #ffffff;
+        --text-body: #cbd5e1;
+        --text-muted: #9ca3af;
+    }
+
+    /* Elementor Headless Fragment Scoping */
+    .a2z-elementor-fragment,
+    .a2z-elementor-fragment * {
+        box-sizing: border-box;
+    }
+
+    .a2z-elementor-fragment {
+        background-color: var(--dark);
+        color: var(--text-body);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.7;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .a2z-elementor-fragment a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .a2z-elementor-fragment img,
+    .a2z-elementor-fragment svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .a2z-elementor-fragment h1,
+    .a2z-elementor-fragment h2,
+    .a2z-elementor-fragment h3,
+    .a2z-elementor-fragment h4,
+    .a2z-elementor-fragment h5,
+    .a2z-elementor-fragment h6 {
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-heading) !important;
+        line-height: 1.25;
+        letter-spacing: -0.015em;
+        margin: 0;
+    }
+
+    .a2z-elementor-fragment p {
+        color: var(--text-body) !important;
+        line-height: 1.82;
+        font-size: 1.035rem;
+        margin: 0 0 1.35rem;
+    }
+
+    .a2z-elementor-fragment p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Reading Progress Bar */
+    #readingProgress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background: linear-gradient(90deg, #e50914, #ff5e62, #ff9966);
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+        transition: width 0.1s linear;
+    }
+
+    /* Layout Container */
+    .page-wrap {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 2.25rem 1.5rem 4.5rem;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+    }
+
+    .breadcrumb a:hover {
+        color: var(--red);
+    }
+
+    .breadcrumb-sep {
+        color: var(--line);
+        font-size: 0.75rem;
+    }
+
+    .breadcrumb-curr {
+        color: #e5e7eb;
+        font-weight: 500;
+    }
+
+    /* Post Header Hero */
+    .article-hero {
+        position: relative;
+        background: linear-gradient(145deg, rgba(21, 24, 30, 0.95), rgba(11, 13, 16, 0.98));
+        border: 1px solid var(--line);
+        border-radius: 1.75rem;
+        padding: 3.5rem 3rem;
+        margin-bottom: 2.75rem;
+        overflow: hidden;
+        box-shadow: 0 20px 60px -25px rgba(0, 0, 0, 0.7);
+    }
+
+    .article-hero::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        right: -80px;
+        width: 380px;
+        height: 380px;
+        background: radial-gradient(circle, rgba(229, 9, 20, 0.18) 0%, transparent 68%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    .hero-badge-wrap {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.4rem 1rem;
+        background: var(--red-subtle);
+        border: 1px solid rgba(229, 9, 20, 0.4);
+        border-radius: 999px;
+        color: #ff6b6b;
+        font-size: 0.775rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    .pulse-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--red);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--red);
+        animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    .article-hero h1 {
+        font-size: clamp(2.35rem, 5vw, 3.85rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1.12;
+        margin-bottom: 1.75rem;
+        max-width: 1050px;
+        background: linear-gradient(180deg, #ffffff 40%, #e2e8f0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .article-meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .author-box {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+    }
+
+    .author-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: 0 0 16px rgba(229, 9, 20, 0.4);
+        flex-shrink: 0;
+        background: #0b0d10;
+        color: var(--red);
+        font-size: 1.25rem;
+        border: 1px solid rgba(229, 9, 20, 0.4);
+    }
+
+    .author-info strong {
+        display: block;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .author-info span {
+        color: var(--text-muted);
+        font-size: 0.825rem;
+    }
+
+    .meta-pills {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.85rem;
+    }
+
+    .meta-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        background: rgba(28, 32, 39, 0.8);
+        border: 1px solid var(--line);
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+    }
+
+    .meta-pill i {
+        color: var(--red);
+    }
+
+    .article-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .action-btn {
+        background: rgba(28, 32, 39, 0.8);
+        border: 1px solid var(--line);
+        color: var(--text-body);
+        padding: 0.45rem 0.95rem;
+        border-radius: 0.55rem;
+        font-size: 0.825rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        transition: all 0.2s ease;
+    }
+
+    .action-btn:hover {
+        background: var(--red);
+        border-color: var(--red);
+        color: #fff;
+        transform: translateY(-1px);
+    }
+
+    /* Lead Summary Box */
+    .lead-callout {
+        background: linear-gradient(135deg, rgba(229, 9, 20, 0.08), rgba(21, 24, 30, 0.85));
+        border-left: 4px solid var(--red);
+        border-radius: 0 1rem 1rem 0;
+        padding: 1.65rem 2rem;
+        margin: 0 0 2.75rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .lead-callout p {
+        font-size: 1.12rem !important;
+        line-height: 1.85 !important;
+        color: #e2e8f0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .lead-callout p:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* Two Column Main Body */
+    .content-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 290px;
+        gap: 2.25rem;
+        align-items: start;
+    }
+
+    /* Main Article Column */
+    .article-body {
+        min-width: 0;
+    }
+
+    .article-section {
+        margin-bottom: 3.5rem;
+        scroll-margin-top: 6.5rem;
+    }
+
+    .article-section h2 {
+        font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        position: relative;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .article-section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: var(--red);
+        border-radius: 2px;
+    }
+
+    .article-section h3 {
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem;
+        color: #f1f5f9;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .article-section h3 .heading-icon {
+        width: 2rem;
+        height: 2rem;
+        background: var(--red-subtle);
+        color: var(--red);
+        border-radius: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+    }
+
+    .article-section a {
+        color: #ff6b6b;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 3px;
+        transition: all 0.2s ease;
+    }
+
+    .article-section a:hover {
+        color: #ffffff;
+        text-decoration-color: var(--red);
+    }
+
+    /* Architecture Visual Comparison Showcase */
+    .architecture-banner {
+        background: linear-gradient(145deg, #15181e, #111419);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        padding: 2.25rem 2rem;
+        margin: 2.25rem 0 2.75rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .architecture-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--red), var(--gold), var(--sky));
+    }
+
+    .arch-title-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.75rem;
+    }
+
+    .arch-title-bar span {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .arch-pipeline {
+        display: grid;
+        grid-template-columns: 1fr auto 1.3fr auto 1fr;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .arch-node {
+        background: var(--card-light);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1.25rem 1rem;
+        text-align: center;
+        transition: all 0.25s ease;
+    }
+
+    .arch-node:hover {
+        border-color: rgba(229, 9, 20, 0.6);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.8);
+    }
+
+    .arch-node-icon {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto 0.75rem;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .icon-upstream {
+        background: rgba(229, 9, 20, 0.15);
+        color: #ff6b6b;
+    }
+
+    .icon-operator {
+        background: rgba(255, 193, 7, 0.15);
+        color: #ffc107;
+    }
+
+    .icon-downstream {
+        background: rgba(56, 189, 248, 0.15);
+        color: #38bdf8;
+    }
+
+    .arch-node h4 {
+        font-size: 0.925rem;
+        font-weight: 700;
+        color: #fff !important;
+        margin-bottom: 0.25rem;
+    }
+
+    .arch-node p {
+        font-size: 0.775rem !important;
+        color: var(--text-muted) !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+    }
+
+    .arch-arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--red);
+        font-size: 1.1rem;
+        animation: arrowFloat 2s infinite ease-in-out;
+    }
+
+    @keyframes arrowFloat {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(4px); }
+    }
+
+    /* Modern Table Card */
+    .table-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        overflow: hidden;
+        margin: 2rem 0;
+        box-shadow: 0 15px 40px -15px rgba(0, 0, 0, 0.7);
+        width: 100%;
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .modern-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.9rem;
+        min-width: 680px;
+        background: transparent !important;
+        color: #cbd5e1 !important;
+    }
+
+    .modern-table th {
+        background: #1c2027 !important;
+        color: #ffffff !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 1.1rem 1.15rem;
+        border-bottom: 2px solid var(--line);
+        vertical-align: middle;
+        line-height: 1.35;
+    }
+
+    .modern-table td {
+        padding: 1.1rem 1.15rem;
+        border-bottom: 1px solid var(--line) !important;
+        color: #cbd5e1 !important;
+        line-height: 1.6;
+        vertical-align: top;
+        font-size: 0.92rem;
+    }
+
+    .modern-table tbody tr:last-child td {
+        border-bottom: none !important;
+    }
+
+    .modern-table tbody tr:hover td {
+        background: rgba(28, 32, 39, 0.5) !important;
+    }
+
+    .badge-task {
+        display: inline-block;
+        font-weight: 700;
+        color: #fff !important;
+        background: rgba(255, 255, 255, 0.06);
+        padding: 0.35rem 0.65rem;
+        border-radius: 0.45rem;
+        border: 1px solid var(--line);
+        font-size: 0.85rem;
+        line-height: 1.35;
+    }
+
+    /* Key Terms Definition Cards */
+    .definition-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin: 2rem 0;
+    }
+
+    .term-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.15rem;
+        padding: 1.5rem;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .term-card:hover {
+        border-color: rgba(229, 9, 20, 0.55);
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px -15px rgba(229, 9, 20, 0.35);
+    }
+
+    .term-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .term-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 0.6rem;
+        background: var(--red-subtle);
+        color: var(--red);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+
+    .term-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #ffffff !important;
+    }
+
+    .term-desc {
+        color: var(--text-muted) !important;
+        font-size: 0.925rem !important;
+        line-height: 1.65 !important;
+        margin: 0 !important;
+    }
+
+    /* Checkpoint Return List */
+    .checkpoint-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1.75rem 0;
+        padding: 0;
+    }
+
+    .checkpoint-item {
+        display: flex;
+        gap: 1.15rem;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1.25rem 1.4rem;
+        transition: all 0.25s ease;
+    }
+
+    .checkpoint-item:hover {
+        border-color: rgba(229, 9, 20, 0.5);
+        transform: translateX(4px);
+        background: var(--card-light);
+    }
+
+    .checkpoint-num {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: var(--red);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 800;
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+    }
+
+    .checkpoint-text {
+        color: #cbd5e1 !important;
+        font-size: 0.975rem;
+        line-height: 1.65;
+    }
+
+    /* Direct Contact / CTA Box */
+    .article-cta-box {
+        background: linear-gradient(135deg, rgba(229, 9, 20, 0.16), rgba(21, 24, 30, 0.96));
+        border: 1px solid rgba(229, 9, 20, 0.45);
+        border-radius: 1.5rem;
+        padding: 2.75rem 2.5rem;
+        margin: 3.5rem 0;
+        text-align: center;
+        box-shadow: 0 25px 60px -25px rgba(229, 9, 20, 0.55);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .article-cta-box h3 {
+        font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+        font-weight: 700;
+        margin-bottom: 0.85rem;
+        color: #fff !important;
+    }
+
+    .article-cta-box p {
+        max-width: 720px;
+        margin: 0 auto 1.5rem !important;
+        color: #cbd5e1 !important;
+    }
+
+    .cta-btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .cta-btn-primary {
+        background: var(--red);
+        color: #ffffff !important;
+        padding: 0.85rem 1.85rem;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        text-decoration: none !important;
+        box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+        transition: all 0.25s ease;
+    }
+
+    .cta-btn-primary:hover {
+        background: var(--red-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 35px rgba(229, 9, 20, 0.8);
+    }
+
+    .cta-btn-outline {
+        background: rgba(21, 24, 30, 0.85);
+        border: 1px solid var(--line);
+        color: #ffffff !important;
+        padding: 0.85rem 1.85rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        text-decoration: none !important;
+        transition: all 0.25s ease;
+    }
+
+    .cta-btn-outline:hover {
+        border-color: var(--red);
+        transform: translateY(-2px);
+        background: var(--card-light);
+    }
+
+    /* FAQ Accordion */
+    .faq-accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.75rem;
+    }
+
+    .faq-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.15rem;
+        overflow: hidden;
+        transition: border-color 0.25s ease;
+    }
+
+    .faq-card.active {
+        border-color: rgba(229, 9, 20, 0.6);
+    }
+
+    .faq-trigger {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 1.4rem 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: left;
+        cursor: pointer;
+        color: #ffffff !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+    }
+
+    .faq-icon-pill {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        background: var(--card-light);
+        border: 1px solid var(--line);
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+        transition: all 0.25s ease;
+    }
+
+    .faq-card.active .faq-icon-pill {
+        background: var(--red);
+        border-color: var(--red);
+        color: #ffffff;
+        transform: rotate(45deg);
+    }
+
+    .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        background: rgba(28, 32, 39, 0.5);
+        border-top: 1px solid transparent;
+    }
+
+    .faq-card.active .faq-content {
+        border-top-color: var(--line);
+    }
+
+    .faq-inner {
+        padding: 1.4rem 1.75rem;
+        color: var(--text-body);
+        font-size: 0.975rem;
+        line-height: 1.8;
+    }
+
+    .faq-inner p {
+        margin: 0 !important;
+        color: #cbd5e1 !important;
+    }
+
+    /* Sticky Sidebar */
+    .sidebar-col {
+        position: sticky;
+        top: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sidebar-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        padding: 1.75rem 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .sidebar-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #ffffff !important;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .sidebar-title i {
+        color: var(--red);
+    }
+
+    /* TOC Links */
+    .toc-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .toc-link {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        padding: 0.45rem 0.75rem;
+        border-radius: 0.5rem;
+        border-left: 2px solid transparent;
+        line-height: 1.4;
+        transition: all 0.2s ease;
+        text-decoration: none !important;
+    }
+
+    .toc-link:hover {
+        color: #ffffff;
+        background: var(--card-light);
+        border-left-color: var(--red);
+    }
+
+    .toc-link.active {
+        color: #ffffff;
+        background: rgba(229, 9, 20, 0.12);
+        border-left-color: var(--red);
+        font-weight: 600;
+    }
+
+    /* Quick Specs Widget */
+    .spec-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.85rem;
+    }
+
+    .spec-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .spec-label {
+        color: var(--text-muted);
+    }
+
+    .spec-val {
+        color: #ffffff;
+        font-weight: 600;
+        text-align: right;
+    }
+
+    /* Direct Support Widget */
+    .support-cta-card {
+        background: linear-gradient(145deg, rgba(229, 9, 20, 0.12), var(--card));
+        border: 1px solid rgba(229, 9, 20, 0.35);
+    }
+
+    .support-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+    }
+
+    .support-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        text-decoration: none !important;
+    }
+
+    .btn-tg {
+        background: rgba(56, 189, 248, 0.15);
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        color: #38bdf8;
+    }
+
+    .btn-tg:hover {
+        background: #38bdf8;
+        color: #0b0d10;
+    }
+
+    .btn-wa {
+        background: rgba(34, 197, 94, 0.15);
+        border: 1px solid rgba(34, 197, 94, 0.4);
+        color: #4ade80;
+    }
+
+    .btn-wa:hover {
+        background: #22c55e;
+        color: #0b0d10;
+    }
+
+    /* Related Links Widget */
+    .related-links-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .related-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0.85rem;
+        border-radius: 0.55rem;
+        background: var(--card-light);
+        color: var(--text-body);
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+        text-decoration: none !important;
+    }
+
+    .related-link:hover {
+        background: var(--red);
+        color: #ffffff !important;
+        transform: translateX(3px);
+    }
+
+    /* Toast Notification */
+    #toast {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--card);
+        border: 1px solid var(--red);
+        color: #fff;
+        padding: 0.85rem 1.4rem;
+        border-radius: 0.75rem;
+        font-size: 0.9rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    #toast.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Back to top button */
+    #backToTop {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--card);
+        border: 1px solid var(--line);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8);
+        transition: all 0.25s ease;
+        z-index: 99;
+    }
+
+    #backToTop:hover {
+        background: var(--red);
+        border-color: var(--red);
+        transform: scale(1.05);
+    }
+
+    #backToTop.show {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1100px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+        .sidebar-col {
+            position: static;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .definition-grid {
+            grid-template-columns: 1fr;
+        }
+        .arch-pipeline {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .arch-arrow {
+            transform: rotate(90deg);
+            margin: 0.25rem 0;
+        }
+        .sidebar-col {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .page-wrap {
+            padding: 1.25rem 1rem 3rem;
+        }
+        .article-hero {
+            padding: 2.25rem 1.5rem;
+        }
+        .article-hero h1 {
+            font-size: 2.15rem;
+        }
+        .article-meta-bar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .lead-callout {
+            padding: 1.25rem 1.25rem;
+        }
+        .article-cta-box {
+            padding: 2rem 1.25rem;
+        }
+        .cta-btn-group {
+            flex-direction: column;
+        }
+        .cta-btn-primary,
+        .cta-btn-outline {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
+
+<!-- Elementor headless fragment: paste this into an HTML widget -->
+<div class="a2z-elementor-fragment bg-dark text-gray-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Reading Progress Indicator -->
+    <div id="readingProgress" aria-hidden="true"></div>
+
+    <!-- Main Container -->
+    <div class="page-wrap">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumbs">
+            <a href="https://a2ziptv.net/">Home</a>
+            <i class="fas fa-chevron-right breadcrumb-sep"></i>
+            <a href="https://a2ziptv.net/iptv-restream/">Restream</a>
+            <i class="fas fa-chevron-right breadcrumb-sep"></i>
+            <span class="breadcrumb-curr">IPTV Restream vs Reseller Panel</span>
+        </nav>
+
+        <!-- Article Hero Header -->
+        <header class="article-hero">
+            <div class="hero-badge-wrap">
+                <span class="pulse-dot"></span>
+                Operator Technical Guide
+            </div>
+            <h1>IPTV Restream vs Reseller Panel</h1>
+            <div class="article-meta-bar">
+                <div class="author-box">
+                    <div class="author-avatar">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="author-info">
+                        <strong>A2Z IPTV Technical Desk</strong>
+                        <span>Wholesale &amp; Operator Engineering</span>
+                    </div>
+                </div>
+                <div class="meta-pills">
+                    <div class="meta-pill"><i class="far fa-calendar-alt"></i> Updated October 2026</div>
+                    <div class="meta-pill"><i class="far fa-clock"></i> 8 min read</div>
+                    <div class="meta-pill"><i class="fas fa-shield-alt"></i> Technical Architecture</div>
+                </div>
+                <div class="article-actions">
+                    <button id="copyLinkBtn" class="action-btn" title="Copy article link">
+                        <i class="fas fa-link"></i> Copy Link
+                    </button>
+                    <button class="action-btn" title="Print guide" onclick="window.print()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Lead Callout -->
+        <div class="lead-callout">
+            <p>
+                <a href="https://a2ziptv.net/iptv-restream/">IPTV restream</a> provides source access for a delivery workflow you operate or contract. A hosted <a href="https://a2ziptv.net/reseller/">reseller panel</a> lets you create <a href="https://a2ziptv.net/subscriptions/">customer subscriptions</a> on a supplier's platform, often using credits. The choice depends on who runs delivery, controls account permissions, handles incidents, and pays each operating cost.
+            </p>
+            <p>
+                Evaluate a reseller panel if you need customer-account management without running delivery infrastructure. Evaluate restream if you have a defined delivery system and someone responsible for operating it. Neither model removes supplier dependence. A branded dashboard alone does not prove ownership of the servers behind it.
+            </p>
+        </div>
+
+        <!-- Two-Column Main Content Grid -->
+        <div class="content-grid">
+
+            <!-- Primary Article Body -->
+            <article class="article-body">
+
+                <!-- SECTION 1 -->
+                <section class="article-section" id="difference">
+                    <h2>The Difference in Operating Model</h2>
+                    <p>
+                        An IPTV restream service supplies stream inputs for an operator's delivery workflow. The operator connects those inputs to a suitable system and arranges the work needed beyond the source supplier's boundary. That work may involve employees, leased infrastructure, or a managed contractor.
+                    </p>
+                    <p>
+                        A hosted IPTV <a href="https://a2ziptv.net/reseller/">reseller panel</a> provides an account on an upstream platform. The seller uses the permissions provided to create customer lines, manage renewals, and track account usage. The supplier generally operates the underlying delivery service.
+                    </p>
+
+                    <!-- Pipeline Visual Comparison -->
+                    <div class="architecture-banner">
+                        <div class="arch-title-bar">
+                            <span><i class="fas fa-network-wired" style="color:var(--red);"></i> Delivery &amp; Account Responsibility Flow</span>
+                            <span style="font-size: 0.775rem; color: var(--text-muted); font-weight: normal;">Architecture Snapshot</span>
+                        </div>
+                        <div class="arch-pipeline">
+                            <div class="arch-node">
+                                <div class="arch-node-icon icon-upstream"><i class="fas fa-satellite-dish"></i></div>
+                                <h4>Source Feeds</h4>
+                                <p>Satellite &amp; Encoder Signals</p>
+                            </div>
+                            <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="arch-node">
+                                <div class="arch-node-icon icon-operator"><i class="fas fa-server"></i></div>
+                                <h4>Media Server / Panel</h4>
+                                <p>Operator System or Hosted Portal</p>
+                            </div>
+                            <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="arch-node">
+                                <div class="arch-node-icon icon-downstream"><i class="fas fa-tv"></i></div>
+                                <h4>Downstream Viewers</h4>
+                                <p>Active Customer Streams</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        The word reseller can describe a person's commercial role as well as a particular access product. An operator buying restream access may also resell <a href="https://a2ziptv.net/subscriptions/">subscriptions</a>. Identify the service being purchased before comparing the labels.
+                    </p>
+                    <p>
+                        The practical question is responsibility: name the party managing customer access and the party delivering the media.
+                    </p>
+                </section>
+
+                <!-- SECTION 2 -->
+                <section class="article-section" id="responsibilities">
+                    <h2>Panel, Server, and Delivery Responsibilities</h2>
+                    
+                    <h3><span class="heading-icon"><i class="fas fa-layer-group"></i></span> Customer Management and Delivery Are Separate Tasks</h3>
+                    <p>
+                        A panel is a management interface. A media server handles media functions such as receiving and delivering streams. Software can connect these components without making them the same product.
+                    </p>
+                    <p>
+                        MediaCP's documentation illustrates this distinction: its reseller account can manage customers and media services without the reseller managing infrastructure. Its Flussonic integration also requires a separate media-server license. These are software examples, rather than a description of A2Z's infrastructure.
+                    </p>
+                    <p>
+                        Use the same criteria to compare either offer:
+                    </p>
+
+                    <!-- Table 1 -->
+                    <div class="table-card">
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Decision criterion</th>
+                                        <th>Source-access restream</th>
+                                        <th>Hosted reseller panel</th>
+                                        <th>Evidence to request</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge-task">Access purchased</span></td>
+                                        <td>Source input or allowance under supplier terms</td>
+                                        <td>Customer-account provisioning under platform terms</td>
+                                        <td>Written service scope and permitted use</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Customer management</span></td>
+                                        <td>Operator selects or contracts the customer system</td>
+                                        <td>Seller uses the platform's granted permissions</td>
+                                        <td>Creation, renewal, suspension, and export permissions</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Delivery infrastructure</span></td>
+                                        <td>Operator operates or contracts delivery beyond the source boundary</td>
+                                        <td>Upstream platform generally operates delivery</td>
+                                        <td>Named delivery owner and hosting scope</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Purchasing unit</span></td>
+                                        <td>Supplier-defined source or session allowance</td>
+                                        <td>Supplier-defined credits or account charges</td>
+                                        <td>Counting rule and deduction schedule</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Control</span></td>
+                                        <td>Depends on source, software, and hosting contracts</td>
+                                        <td>Depends on reseller permissions</td>
+                                        <td>Actual controls available to the account</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Support</span></td>
+                                        <td>Customer triage plus retained delivery work</td>
+                                        <td>Customer triage plus supplier escalation</td>
+                                        <td>Fault ownership and support coverage</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <p>
+                        This matrix describes common arrangements. The actual contract takes precedence over a model label.
+                    </p>
+
+                    <h3 id="branding"><span class="heading-icon"><i class="fas fa-tag"></i></span> Branding Does Not Establish Server Ownership</h3>
+                    <p>
+                        Consider two hypothetical arrangements. One seller uses a dashboard with its own logo but cannot change server settings. Another rents delivery infrastructure and pays a contractor to manage it. The first has branding; the second has a delivery contract. Neither arrangement requires ownership of physical hardware.
+                    </p>
+                    <p>
+                        Ask for a permission list and a responsibility statement. Use the <a href="https://a2ziptv.net/setup-guide/">A2Z setup paths</a> to find the relevant workflow after choosing your route.
+                    </p>
+                </section>
+
+                <!-- SECTION 3 -->
+                <section class="article-section" id="credits-allowance">
+                    <h2>Credits Versus Source-Session Allowance</h2>
+
+                    <h3><span class="heading-icon"><i class="fas fa-coins"></i></span> Credits Pay for Defined Account Actions</h3>
+                    <p>
+                        A reseller credit is a supplier-defined account unit. Its meaning depends on the deduction schedule, subscription duration, <a href="https://a2ziptv.net/multi-connections/">connection allowance</a>, and account action. A credit is not an industry-wide equivalent of one customer or one month.
+                    </p>
+                    <p>
+                        Request the rules for creating, extending, upgrading, and replacing customer lines. Check whether unused credits expire and whether an unsuccessful action returns the deducted balance. Record unknown rules before comparing quotes.
+                    </p>
+
+                    <h3 id="sessions-count"><span class="heading-icon"><i class="fas fa-calculator"></i></span> Source Sessions and Viewer Sessions Need Separate Counts</h3>
+                    <p>
+                        The word connection needs a defined counting point.
+                    </p>
+
+                    <!-- Table 2 -->
+                    <div class="table-card">
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Term</th>
+                                        <th>Meaning for the comparison</th>
+                                        <th>Confirmation needed</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge-task">Source session</span></td>
+                                        <td>An access session between the source and the receiving delivery system</td>
+                                        <td>Supplier counting method and limit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Downstream active session</span></td>
+                                        <td>Active playback served through the delivery workflow</td>
+                                        <td>Measurement point and enforcement rule</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Customer account</span></td>
+                                        <td>A registered customer login or subscription record</td>
+                                        <td>Allowed active sessions and account status</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Reseller credit</span></td>
+                                        <td>A unit deducted for specified account actions</td>
+                                        <td>Deduction schedule and applicable conditions</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <p>
+                        Registered accounts and active playback are different measures. Saving credentials on a device also does not establish that playback is active.
+                    </p>
+                    <p>
+                        Avoid converting a source allowance into a customer count without checking the delivery architecture and supplier rules. Request a written explanation of the counted unit, over-limit behavior, and any restrictions on source reuse. A tier name alone cannot answer those questions.
+                    </p>
+                </section>
+
+                <!-- SECTION 4 -->
+                <section class="article-section" id="cost-support">
+                    <h2>Cost Control and Support Responsibilities</h2>
+
+                    <h3><span class="heading-icon"><i class="fas fa-file-invoice-dollar"></i></span> Compare the Complete Operating Cost</h3>
+                    <p>
+                        A lower source quote does not establish a lower total cost. A hosted reseller offer also needs a clear account of the work and charges retained by the seller.
+                    </p>
+                    <p>
+                        Compare both routes over the same billing period and in the same currency. List source or account charges, software licenses, hosting where applicable, monitoring, payment fees, support time, <a href="https://a2ziptv.net/refund_returns/">refunds</a>, and transition work. Mark each item included, separately charged, or unknown.
+                    </p>
+                    <p>
+                        This is a planning checklist, rather than a claim that every offer charges for every item. No fixed savings or profit estimate follows from choosing either model. Gross customer payments must still cover the costs your business retains.
+                    </p>
+
+                    <h3><span class="heading-icon"><i class="fas fa-headset"></i></span> Assign the First Response and Supplier Escalation</h3>
+                    <p>
+                        A customer reports a symptom. The seller still needs a path for identifying the affected layer and contacting the responsible party.
+                    </p>
+                    <p>
+                        Complete a support worksheet before ordering:
+                    </p>
+
+                    <!-- Table 3 -->
+                    <div class="table-card">
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Issue to plan for</th>
+                                        <th>Owner to record</th>
+                                        <th>Evidence to agree in advance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge-task">Customer login or renewal issue</span></td>
+                                        <td>Customer-account administrator</td>
+                                        <td>Redacted account status and error text</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Delivery interruption</span></td>
+                                        <td>Delivery operator or managed contractor</td>
+                                        <td>Affected region, timestamp, and monitoring record</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Source unavailable</span></td>
+                                        <td>Source supplier and receiving operator</td>
+                                        <td>Affected source, time, and receiving-system observations</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge-task">Local playback issue</span></td>
+                                        <td>Customer-support contact, with technical escalation if needed</td>
+                                        <td>App, device, network, and symptom</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <p>
+                        An issue can cross several layers. Agree on handoffs rather than assuming one party fixes every fault. Keep credentials, tokens, private stream addresses, and customer details out of public reports.
+                    </p>
+                </section>
+
+                <!-- SECTION 5 -->
+                <section class="article-section" id="decision-table">
+                    <h2>A Decision Table by Buyer Readiness</h2>
+                    <p>
+                        Use this table to choose a route to investigate. It is a decision aid, rather than a package recommendation or prediction of results.
+                    </p>
+
+                    <!-- Table 4 -->
+                    <div class="table-card">
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Your current position</th>
+                                        <th>Route to evaluate</th>
+                                        <th>Condition before committing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Need customer-line creation and have no delivery operator</strong></td>
+                                        <td><span class="badge-task">Hosted reseller panel</span></td>
+                                        <td>Confirm permissions, credit rules, and support boundaries</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Have a delivery system and someone responsible for it</strong></td>
+                                        <td><span class="badge-task">Source-access restream</span></td>
+                                        <td>Confirm source compatibility, counted allowance, and permitted use</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Need branding without delivery administration</strong></td>
+                                        <td><span class="badge-task">Hosted reseller panel or managed arrangement</span></td>
+                                        <td>Inspect actual permissions and included management work</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Already resell and need more operational control</strong></td>
+                                        <td><span class="badge-task">Restream after a readiness review</span></td>
+                                        <td>Document infrastructure, ongoing costs, migration limits, and incident coverage</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cannot identify the unit or responsible party</strong></td>
+                                        <td><span class="badge-task">Resolve the missing evidence first</span></td>
+                                        <td>Obtain written answers before ordering</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <h3><span class="heading-icon"><i class="fas fa-list-check"></i></span> Before committing, record five answers:</h3>
+                    <ul class="checkpoint-list">
+                        <li class="checkpoint-item">
+                            <span class="checkpoint-num">1</span>
+                            <div class="checkpoint-text">
+                                Name the delivery owner and the work included in that role.
+                            </div>
+                        </li>
+                        <li class="checkpoint-item">
+                            <span class="checkpoint-num">2</span>
+                            <div class="checkpoint-text">
+                                Define the purchasing unit and the action that consumes it.
+                            </div>
+                        </li>
+                        <li class="checkpoint-item">
+                            <span class="checkpoint-num">3</span>
+                            <div class="checkpoint-text">
+                                Assign customer support, delivery support, and supplier escalation.
+                            </div>
+                        </li>
+                        <li class="checkpoint-item">
+                            <span class="checkpoint-num">4</span>
+                            <div class="checkpoint-text">
+                                Request evidence of permitted distribution and applicable territories. A working stream is insufficient evidence on its own.
+                            </div>
+                        </li>
+                        <li class="checkpoint-item">
+                            <span class="checkpoint-num">5</span>
+                            <div class="checkpoint-text">
+                                Confirm recovery options, account export permissions, and the process for leaving the platform.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p>
+                        We recommend resolving these points before choosing a larger allowance or changing operating models. A successful login answers an access question; it does not settle the wider <a href="https://a2ziptv.net/service/">operating agreement</a>.
+                    </p>
+                </section>
+
+                <!-- SECTION 6 -->
+                <section class="article-section" id="matching-route">
+                    <h2>The Matching A2Z Route</h2>
+                    <p>
+                        At A2Z IPTV, we offer separate paths for <a href="https://a2ziptv.net/iptv-restream/">restream source access</a> and <a href="https://a2ziptv.net/reseller/">reseller panel access</a>. Choose the route that matches the delivery and customer-management work you plan to cover.
+                    </p>
+
+                    <!-- Dual Definition / Model Cards -->
+                    <div class="definition-grid">
+                        <div class="term-card">
+                            <div class="term-header">
+                                <div class="term-icon"><i class="fas fa-server"></i></div>
+                                <div class="term-title">Restream Source Access</div>
+                            </div>
+                            <div class="term-desc">
+                                Connect high-stability feeds into your existing panel or media server. Scale from 50 to 5,000+ simultaneous connections with anti-freeze routing and standard/VIP international feeds.
+                            </div>
+                            <div style="margin-top:1.25rem;">
+                                <a href="https://a2ziptv.net/iptv-restream/" style="font-size:0.85rem;color:#ff6b6b;font-weight:700;">Explore Restream Feeds <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="term-card">
+                            <div class="term-header">
+                                <div class="term-icon" style="background:rgba(56,189,248,0.15);color:#38bdf8;"><i class="fas fa-users-gear"></i></div>
+                                <div class="term-title">Hosted Reseller Panel</div>
+                            </div>
+                            <div class="term-desc">
+                                Create and renew customer lines on our fully managed infrastructure using credits. Zero server maintenance required, with instant activations and sub-reseller creation tools.
+                            </div>
+                            <div style="margin-top:1.25rem;">
+                                <a href="https://a2ziptv.net/reseller/" style="font-size:0.85rem;color:#38bdf8;font-weight:700;">Explore Reseller Credits <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        Share your current panel or delivery setup, target regions, and expected active demand through our <a href="https://a2ziptv.net/contact/">contact page</a>. Confirm the purchasing unit, operating responsibilities, and applicable terms before ordering. Describe your requirements without sending passwords or private source URLs in the initial inquiry.
+                    </p>
+
+                    <!-- Direct Support CTA Box -->
+                    <div class="article-cta-box">
+                        <h3>Discuss Your Operating Architecture</h3>
+                        <p>
+                            Connect with our technical engineering desk to verify panel compatibility, stream formats, and credit policies before ordering.
+                        </p>
+                        <div class="cta-btn-group">
+                            <a class="cta-btn-primary" href="https://a2ziptv.net/contact/">
+                                <i class="fas fa-envelope"></i> Contact Engineering Team
+                            </a>
+                            <a class="cta-btn-outline" href="https://t.me/A2ziPTV" target="_blank" rel="noopener">
+                                <i class="fab fa-telegram" style="color: var(--sky);"></i> Telegram Support
+                            </a>
+                            <a class="cta-btn-outline" href="https://wa.me/358414003335?text=Hi%2C%20I%20would%20like%20to%20discuss%20IPTV%20Restream%20and%20Reseller%20Panels." target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp" style="color: var(--green);"></i> WhatsApp Support
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7 -->
+                <section class="article-section" id="faq">
+                    <h2>Additional Buyer Questions</h2>
+
+                    <div class="faq-accordion">
+                        <div class="faq-card active">
+                            <button class="faq-trigger" aria-expanded="true">
+                                <span>Can a Seller Use Both Models?</span>
+                                <span class="faq-icon-pill"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="faq-content" style="max-height: 300px;">
+                                <div class="faq-inner">
+                                    <p>
+                                        Yes. A seller could use hosted reseller access for one service and a separately operated delivery workflow for another. This is a possible arrangement, subject to each agreement. Keep account permissions, source allowances, costs, and support responsibilities separate. It is not confirmation of an A2Z combined package.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button class="faq-trigger" aria-expanded="false">
+                                <span>Does Changing Models Preserve Customer Accounts?</span>
+                                <span class="faq-icon-pill"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="faq-inner">
+                                    <p>
+                                        Account portability is not automatic. Confirm export permissions, supported import fields, subscription expiry handling, and any customer login changes. Some migrations may require new credentials or device setup. Plan the transition from the actual platforms' documented capabilities before promising customers continuity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button class="faq-trigger" aria-expanded="false">
+                                <span>Can a Managed Contractor Run the Delivery System?</span>
+                                <span class="faq-icon-pill"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="faq-inner">
+                                    <p>
+                                        Yes, delivery work can be contracted. Define responsibility for configuration, monitoring, security, incidents, and recovery in the agreement. A managed arrangement does not remove the need to check source terms or identify responsibility for customer accounts and supplier escalation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button class="faq-trigger" aria-expanded="false">
+                                <span>Does an M3U Link Identify the Business Model?</span>
+                                <span class="faq-icon-pill"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="faq-inner">
+                                    <p>
+                                        No. M3U is a playlist format; Xtream-style login is an access workflow. Neither establishes ownership of delivery infrastructure or customer-management permissions. Inspect the service scope and account role. <a href="https://datatracker.ietf.org/doc/html/rfc8216" target="_blank" rel="noopener noreferrer">RFC 8216</a> describes HLS playlist and delivery behavior, rather than reseller billing or business ownership.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Sticky Sidebar Column -->
+            <aside class="sidebar-col">
+
+                <!-- Table of Contents Widget -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title"><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a class="toc-link active" href="#difference">1. Operating Models</a></li>
+                        <li><a class="toc-link" href="#responsibilities">2. Delivery Tasks</a></li>
+                        <li><a class="toc-link" href="#branding">3. Server Ownership</a></li>
+                        <li><a class="toc-link" href="#credits-allowance">4. Credits vs Streams</a></li>
+                        <li><a class="toc-link" href="#sessions-count">5. Session Counting</a></li>
+                        <li><a class="toc-link" href="#cost-support">6. Cost &amp; Support</a></li>
+                        <li><a class="toc-link" href="#decision-table">7. Buyer Readiness</a></li>
+                        <li><a class="toc-link" href="#matching-route">8. Matching Route</a></li>
+                        <li><a class="toc-link" href="#faq">9. Buyer FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operator Specs Widget -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title"><i class="fas fa-microchip"></i> Architecture Specs</h3>
+                    <div class="spec-item">
+                        <span class="spec-label">Restream Input</span>
+                        <span class="spec-val">HLS / M3U / MPEG-TS</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Reseller Unit</span>
+                        <span class="spec-val">Panel Credits</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Compatible Panels</span>
+                        <span class="spec-val">Xtream, Flussonic, MTX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Capacity Range</span>
+                        <span class="spec-val">50 to 5,000+ Conns</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Delivery SLA</span>
+                        <span class="spec-val">24/7 Monitored</span>
+                    </div>
+                </div>
+
+                <!-- Direct Support Widget -->
+                <div class="sidebar-card support-cta-card">
+                    <h3 class="sidebar-title" style="border-bottom-color: rgba(229,9,20,0.3);"><i class="fas fa-headset"></i> Need Setup Advice?</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin: 0;">
+                        Have questions about your panel configuration, connection limits, or credit rules? Contact our team directly.
+                    </p>
+                    <div class="support-btns">
+                        <a class="support-btn btn-tg" href="https://t.me/A2ziPTV" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i> Telegram Support
+                        </a>
+                        <a class="support-btn btn-wa" href="https://wa.me/358414003335?text=Hi%2C%20I%20would%20like%20to%20discuss%20IPTV%20Restream%20and%20Reseller%20Panels." target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Support
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Related Solutions Widget -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title"><i class="fas fa-layer-group"></i> Related Solutions</h3>
+                    <ul class="related-links-list">
+                        <li>
+                            <a class="related-link" href="https://a2ziptv.net/iptv-restream/">
+                                Restream Services <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="related-link" href="https://a2ziptv.net/reseller/">
+                                Reseller Panel <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="related-link" href="https://a2ziptv.net/vip-stream/">
+                                VIP Source Feeds <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="related-link" href="https://a2ziptv.net/setup-guide/">
+                                Setup Workflows <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="related-link" href="https://a2ziptv.net/free-trial/">
+                                Operator Free Trial <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Back to top of page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notice -->
+    <div id="toast" role="status" aria-live="polite">
+        <i class="fas fa-check-circle" style="color: var(--green);"></i> Link copied to clipboard!
+    </div>
+
+    <!-- JavaScript Interactive Functionality -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const bar = document.getElementById('readingProgress');
+            if (bar) bar.style.width = scrolled + '%';
+
+            // Back to top button visibility
+            const backBtn = document.getElementById('backToTop');
+            if (backBtn) {
+                if (winScroll > 400) {
+                    backBtn.classList.add('show');
+                } else {
+                    backBtn.classList.remove('show');
+                }
+            }
+        });
+
+        // Back to top click
+        const backBtn = document.getElementById('backToTop');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Accordion functionality
+        const faqCards = document.querySelectorAll('.faq-card');
+        faqCards.forEach(card => {
+            const trigger = card.querySelector('.faq-trigger');
+            const content = card.querySelector('.faq-content');
+
+            trigger.addEventListener('click', () => {
+                const isActive = card.classList.contains('active');
+
+                // Close all cards
+                faqCards.forEach(c => {
+                    c.classList.remove('active');
+                    const cTrigger = c.querySelector('.faq-trigger');
+                    const cContent = c.querySelector('.faq-content');
+                    if (cTrigger) cTrigger.setAttribute('aria-expanded', 'false');
+                    if (cContent) cContent.style.maxHeight = null;
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    card.classList.add('active');
+                    trigger.setAttribute('aria-expanded', 'true');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Copy link with Toast notification
+        const copyBtn = document.getElementById('copyLinkBtn');
+        const toast = document.getElementById('toast');
+
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    if (toast) {
+                        toast.classList.add('show');
+                        setTimeout(() => {
+                            toast.classList.remove('show');
+                        }, 3000);
+                    }
+                }).catch(() => {
+                    alert('Article link copied to clipboard!');
+                });
+            });
+        }
+
+        // Table of Contents Active Link Tracking on Scroll
+        const sections = document.querySelectorAll('.article-section');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (current && link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</div>

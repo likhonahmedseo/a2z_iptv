@@ -1,0 +1,1118 @@
+<!-- Schema Markup -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "A2Z IPTV Subscription Italy",
+          "description": "Buy an IPTV subscription in Italy with A2Z IPTV. Compare plans from €9.99, choose one to three active screens, and request a one-day free trial.",
+          "brand": {
+            "@type": "Brand",
+            "name": "A2Z IPTV"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "EUR",
+            "lowPrice": "9.99",
+            "highPrice": "129.99",
+            "offerCount": "13",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "1 Month Single Stream",
+                "price": "9.99",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://a2ziptv.net/subscriptions/"
+              },
+              {
+                "@type": "Offer",
+                "name": "12 Months Single Stream",
+                "price": "74.99",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://a2ziptv.net/subscriptions/"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can I try A2Z IPTV before buying in Italy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We offer a one-day free trial. Share your device and viewing requirements, then test your selected channels, audio, subtitles, and playback before choosing a paid term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does our subscription include Italian audio and subtitles?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Availability depends on the channel or title. Send us your requirements and check the specific program during your trial. Italian audio, Italian subtitles, and an Italian app menu are separate features."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can two people watch different programs at once?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our two-connection plan permits two active streams. Choose three connections for three screens playing at once. Check the account rules with us if you plan to use different households or networks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the listed price cover the whole subscription period?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The table shows the full subscription price for each term in euros. For example, €74.99 covers the listed 12-month single-stream plan. Review the final order for any separate charges and confirm renewal terms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a separate IPTV player or internet connection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You need your own internet connection, a supported device, and a compatible player or supported device setup. Some players require a separate license payment. We can help you check the requirements before ordering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request a refund if the service does not work as advertised?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can submit a request within seven days of purchase under our refund policy. Our team reviews the issue and may request screenshots, device details, or troubleshooting records. Approval is subject to the policy conditions."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --red: #e50914;
+            --red-dark: #c10710;
+            --bg: #0b0d10;
+            --card: #15181e;
+            --card-light: #1c2027;
+            --line: #262b33;
+            --muted: #9ca3af;
+            --copy: #cbd5e1;
+            --text-high: #f8fafc;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; background: var(--bg); color: var(--copy); font-family: Inter, sans-serif; line-height: 1.6; }
+        .a2z-elementor-fragment {
+            margin: 0;
+            background: var(--bg);
+            color: var(--copy);
+            font-family: Inter, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .a2z-elementor-fragment a { color: inherit; text-decoration: none; }
+        .a2z-elementor-fragment img { max-width: 100%; display: block; }
+
+        h1, h2, h3, h4 { font-family: Poppins, sans-serif; line-height: 1.2; margin: 0; color: #fff; }
+        p { margin: 0; color: var(--copy); }
+        .wrap { width: min(1140px, calc(100% - 32px)); margin: auto; }
+        .section { padding: 88px 0; }
+        .muted-section { background: rgba(21, 24, 30, 0.45); border-top: 1px solid rgba(38, 43, 51, 0.7); border-bottom: 1px solid rgba(38, 43, 51, 0.7); }
+
+        /* Hero */
+        .hero {
+            min-height: 680px;
+            padding: 130px 0 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(11,13,16,0.98) 0%, rgba(11,13,16,0.90) 48%, rgba(11,13,16,0.45) 100%),
+                        url('https://a2ziptv.net/wp-content/uploads/2026/09/premium-IPTV-restreaming-1.webp') center/cover no-repeat;
+        }
+        .hero:after {
+            content: "";
+            position: absolute;
+            inset: auto -10% -35% 42%;
+            height: 420px;
+            background: rgba(229, 9, 20, 0.22);
+            filter: blur(100px);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 820px; }
+        .eyebrow, .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+        .eyebrow {
+            padding: 8px 16px;
+            border: 1px solid rgba(229,9,20,.45);
+            border-radius: 999px;
+            background: rgba(229,9,20,.12);
+            letter-spacing: .04em;
+            text-transform: none;
+            font-size: 13.5px;
+            color: #fff;
+        }
+        .eyebrow i { color: var(--red); font-size: 9px; }
+        .hero h1 { font-size: clamp(2.5rem, 5.5vw, 4.8rem); margin: 24px 0 18px; font-weight: 800; }
+        .gradient {
+            background: linear-gradient(90deg, #e50914, #ff7a7a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .lead { font-size: clamp(1.08rem, 2vw, 1.25rem); color: #fff; font-weight: 600; margin-bottom: 16px; }
+        .hero p { max-width: 760px; font-size: 1.05rem; color: #d1d5db; line-height: 1.7; }
+        .hero-actions, .actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+        .hero-actions { margin-top: 32px; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 24px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            font-weight: 700;
+            font-size: .94rem;
+            transition: .25s ease;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: var(--red);
+            border-color: var(--red);
+            color: #fff !important;
+            box-shadow: 0 0 28px -8px rgba(229, 9, 20, 0.85);
+        }
+        .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+        .btn-ghost { background: rgba(21, 24, 30, 0.88); color: #fff !important; border-color: rgba(255,255,255,0.15); }
+        .btn-ghost:hover { border-color: var(--red); transform: translateY(-2px); }
+        .btn-tg {
+            background: rgba(56, 189, 248, 0.12);
+            color: #38bdf8 !important;
+            border-color: rgba(56, 189, 248, 0.35);
+        }
+        .btn-tg:hover {
+            background: #38bdf8;
+            color: #0b0d10 !important;
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+            box-shadow: 0 0 24px -6px rgba(56, 189, 248, 0.6);
+        }
+        .btn-wa {
+            background: rgba(34, 197, 94, 0.12);
+            color: #4ade80 !important;
+            border-color: rgba(34, 197, 94, 0.35);
+        }
+        .btn-wa:hover {
+            background: #22c55e;
+            color: #0b0d10 !important;
+            border-color: #22c55e;
+            transform: translateY(-2px);
+            box-shadow: 0 0 24px -6px rgba(34, 197, 94, 0.6);
+        }
+
+        /* Stats & Cards */
+        .stats, .grid-2, .grid-3, .grid-4, .steps, .faq-grid { display: grid; gap: 20px; }
+        .stats { grid-template-columns: repeat(3, 1fr); max-width: 760px; margin-top: 38px; }
+        .stat, .card, .faq-item, .note, .list-card, .table-card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+        }
+        .stat { padding: 18px 22px; }
+        .stat strong { display: block; font: 700 1.6rem Poppins; color: #fff; }
+        .stat span { font-size: .82rem; color: var(--muted); }
+
+        .intro { text-align: center; max-width: 860px; margin: 0 auto 46px; }
+        .intro h2 { font-size: clamp(2rem, 4vw, 3.1rem); margin-top: 12px; font-weight: 700; }
+        .intro p { margin-top: 14px; font-size: 1.05rem; color: #cbd5e1; }
+
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+        .card { padding: 28px; transition: .25s ease; }
+        .card:hover { border-color: rgba(229,9,20,0.6); transform: translateY(-4px); }
+        .card h3 { font-size: 1.25rem; margin: 18px 0 10px; color: #fff; }
+        .card p, .list-card p { font-size: .96rem; color: #cbd5e1; line-height: 1.65; }
+
+        .icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            background: rgba(229, 9, 20, 0.14);
+            border: 1px solid rgba(229, 9, 20, 0.32);
+            color: var(--red);
+            font-size: 1.25rem;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(229,9,20,0.16) 0%, var(--card) 68%);
+            border: 1px solid rgba(229, 9, 20, 0.45);
+            border-radius: 24px;
+            padding: 34px;
+            box-shadow: 0 20px 50px -28px rgba(229,9,20,0.7);
+        }
+        .highlight h3 { font-size: 1.55rem; margin-bottom: 14px; color: #fff; }
+        .highlight p { color: #cbd5e1; font-size: 1.02rem; }
+        .highlight p + p { margin-top: 15px; }
+
+        .list-card { padding: 28px; }
+        .list-card h3 { font-size: 1.22rem; margin-bottom: 14px; color: #fff; }
+
+        .check-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+        .check-list li { display: flex; gap: 12px; align-items: flex-start; color: #cbd5e1; font-size: .98rem; }
+        .check-list li i { color: #22c55e; margin-top: 4px; font-size: .95rem; }
+
+        /* Tables */
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: var(--card);
+            box-shadow: 0 20px 40px -20px rgba(0,0,0,0.8);
+            margin: 28px 0;
+        }
+        .pricing { width: 100%; min-width: 680px; border-collapse: collapse; text-align: left; }
+        .pricing th, .pricing td {
+            padding: 18px 24px;
+            border-bottom: 1px solid var(--line);
+            color: #cbd5e1 !important;
+            vertical-align: middle;
+        }
+        .pricing th {
+            background: var(--card-light);
+            color: #ffffff !important;
+            font: 700 .92rem Poppins;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            white-space: nowrap;
+        }
+        .pricing tr:hover td { background: rgba(255,255,255,0.02); }
+        .pricing tr:last-child td { border-bottom: 0; }
+        .price-badge {
+            display: inline-block;
+            font-weight: 800;
+            color: #ff626a;
+            font-size: 1.15rem;
+        }
+
+        .details-table { width: 100%; border-collapse: collapse; text-align: left; }
+        .details-table th, .details-table td {
+            padding: 17px 22px;
+            border-bottom: 1px solid var(--line);
+            color: #cbd5e1 !important;
+        }
+        .details-table th {
+            background: var(--card-light);
+            color: #ffffff !important;
+            font: 700 .92rem Poppins;
+        }
+        .details-table tr:last-child td { border-bottom: 0; }
+
+        .note { padding: 20px 24px; text-align: center; color: var(--muted); margin-top: 24px; font-size: .95rem; }
+        .note a, .copy a, .faq-answer a, p a { color: #ff626a; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+        .note a:hover, .copy a:hover, .faq-answer a:hover, p a:hover { color: #fff; }
+
+        /* Pricing Catalog / Tabs */
+        .pricing-tabs { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 30px auto 26px; }
+        .pricing-tab {
+            padding: 13px 24px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: var(--card);
+            color: var(--muted);
+            font-weight: 700;
+            font-size: .92rem;
+            cursor: pointer;
+            transition: .25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+        }
+        .pricing-tab:hover { border-color: rgba(229,9,20,.6); color: #fff; }
+        .pricing-tab.active {
+            background: var(--red);
+            border-color: var(--red);
+            color: #fff;
+            box-shadow: 0 0 25px -5px rgba(229,9,20,.75);
+        }
+        .pricing-panel { display: none; }
+        .pricing-panel.active { display: block; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+        .pricing-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+        .price-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 485px;
+            padding: 26px 22px;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            background: var(--card);
+            transition: .25s ease;
+            position: relative;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(229,9,20,.65);
+            box-shadow: 0 22px 48px -26px rgba(229,9,20,.8);
+        }
+        .price-card.featured {
+            background: linear-gradient(180deg, rgba(229,9,20,.18), var(--card) 60%);
+            border-color: rgba(229,9,20,.7);
+            box-shadow: 0 0 32px -10px rgba(229,9,20,.65);
+        }
+        .value-pill {
+            width: max-content;
+            padding: 6px 12px;
+            border: 1px solid rgba(229,9,20,.45);
+            border-radius: 999px;
+            background: rgba(229,9,20,.12);
+            color: #fff;
+            font-size: 11.5px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .price-card h4 { margin: 18px 0 4px; font-size: 1.45rem; color: #fff; }
+        .price-card .stream-label { color: var(--muted); font-size: .8rem; }
+        .price-card .amount { margin: 20px 0 4px; color: #fff; font: 700 2.35rem/1 Poppins; letter-spacing: -.03em; }
+        .price-card .kicker { min-height: 28px; color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
+        .price-divider { height: 1px; margin: 16px 0; background: linear-gradient(90deg, rgba(229,9,20,.75), rgba(255,255,255,.08), transparent); }
+        .price-card ul { display: grid; gap: 9px; flex: 1; margin: 0; padding: 0; list-style: none; color: #cbd5e1; font-size: .82rem; }
+        .price-card li { display: flex; gap: 8px; align-items: flex-start; }
+        .price-card li i { margin-top: 3px; color: #22c55e; font-size: .8rem; }
+        .price-card .buy {
+            margin-top: 22px;
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 999px;
+            text-align: center;
+            border: 2px solid rgba(229,9,20,.7);
+            color: var(--red) !important;
+            font-weight: 700;
+            font-size: .88rem;
+            transition: .25s ease;
+            display: inline-block;
+        }
+        .price-card .buy.primary { background: var(--red); border-color: var(--red); color: #fff !important; }
+        .price-card .buy:hover { background: var(--red); color: #fff !important; }
+
+        /* Steps */
+        .steps { grid-template-columns: repeat(3, 1fr); counter-reset: steps; }
+        .step { position: relative; padding: 26px; }
+        .step-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            background: var(--red);
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.15rem;
+            font-family: Poppins, sans-serif;
+        }
+        .step h3 { margin-top: 18px; font-size: 1.15rem; color: #fff; }
+        .step p { margin-top: 10px; font-size: .94rem; color: #cbd5e1; }
+
+        /* FAQ Accordion */
+        .faq-grid { max-width: 920px; margin: auto; }
+        .faq-item { overflow: hidden; border-radius: 16px; transition: .2s ease; }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 22px 26px;
+            background: none;
+            color: #fff;
+            border: 0;
+            text-align: left;
+            font: 700 1.05rem Inter, sans-serif;
+            cursor: pointer;
+        }
+        .faq-question i { color: var(--red); transition: transform .25s ease; font-size: .95rem; }
+        .faq-answer { display: none; padding: 0 26px 24px; color: #cbd5e1; font-size: .98rem; line-height: 1.7; }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-item.open .faq-question i { transform: rotate(180deg); }
+
+        /* Final Banner */
+        .final {
+            background: linear-gradient(135deg, rgba(229,9,20,0.2) 0%, var(--card) 65%);
+            border: 1px solid rgba(229,9,20,0.5);
+            border-radius: 28px;
+            padding: 56px 36px;
+            text-align: center;
+            box-shadow: 0 25px 60px -25px rgba(229,9,20,0.5);
+        }
+        .final h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; }
+        .final p { max-width: 740px; margin: 18px auto 28px; font-size: 1.08rem; color: #cbd5e1; }
+
+        @media (max-width: 1100px) {
+            .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+            .pricing-grid.four { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 900px) {
+            .grid-4, .steps { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: 1fr 1fr; }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+            .section { padding: 60px 0; }
+            .wrap { width: min(100% - 24px, 1140px); }
+            .hero { padding-top: 100px; min-height: 0; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero-actions, .actions { align-items: stretch; flex-direction: column; }
+            .btn { width: 100%; }
+            .stats, .grid-3, .grid-4, .steps, .pricing-grid, .pricing-grid.four { grid-template-columns: 1fr; }
+            .highlight, .final { padding: 26px 20px; }
+            .pricing th, .pricing td, .details-table th, .details-table td { padding: 14px 14px; font-size: .88rem; }
+            .price-card { min-height: 0; }
+            .pricing-tab { width: 100%; justify-content: center; }
+        }
+    </style>
+
+<div class="a2z-elementor-fragment">
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="wrap hero-content">
+            <span class="eyebrow"><i class="fas fa-circle"></i> Italy IPTV Subscription · Plans from €9.99</span>
+            <h1>Buy IPTV Subscription in <span class="gradient">Italy</span></h1>
+            <p class="lead">Are you looking for the best IPTV subscription providers in Italy?</p>
+            <p>A2Z IPTV offers <a href="https://a2ziptv.net/subscriptions/">live TV</a>, movies, and series with plans for one, two, or three active screens. Start from €9.99 for one month with <a href="https://a2ziptv.net/single-connection/">one active stream</a>, or compare longer terms after testing your setup.</p>
+            <p style="margin-top:16px">Our one-day free trial lets you check the programs, audio, and playback that matter to you. Send us your preferred channels and device model. We’ll help you check your options before you choose a subscription.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="https://a2ziptv.net/subscriptions/">View Our IPTV Plans <i class="fas fa-arrow-right"></i></a>
+                <a class="btn btn-ghost" href="https://a2ziptv.net/free-trial/">Request a Free Trial <i class="fas fa-play"></i></a>
+                <a class="btn btn-tg" href="https://t.me/A2ziPTV" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram</a>
+                <a class="btn btn-wa" href="https://wa.me/358414003335?text=Hi%2C%20I%20would%20like%20to%20ask%20about%20an%20IPTV%20subscription%20in%20Italy." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            <div class="stats">
+                <div class="stat"><strong>€9.99</strong><span>Starting plan</span></div>
+                <div class="stat"><strong>1 Day</strong><span>Free test trial</span></div>
+                <div class="stat"><strong>1–3</strong><span>Active screens</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PRICING & SCREENS SECTION -->
+        <section class="section" id="pricing">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Transparent Pricing</span>
+                    <h2>Choose Our IPTV Plan for <span class="gradient">Your Screens</span></h2>
+                    <p>Pay for the viewing time and screen allowance your household needs. Each price below covers the full subscription period in euros.</p>
+                </div>
+
+                <!-- Complete Comparative Price Table -->
+                <div class="table-wrap">
+                    <table class="pricing">
+                        <thead>
+                            <tr>
+                                <th>Subscription period</th>
+                                <th>One active stream</th>
+                                <th>Two active streams</th>
+                                <th>Three active streams</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1 month</strong></td>
+                                <td><span class="price-badge">€9.99</span></td>
+                                <td><span class="price-badge">€17.99</span></td>
+                                <td><span class="price-badge">€24.99</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>3 months</strong></td>
+                                <td><span class="price-badge">€24.99</span></td>
+                                <td><span class="price-badge">€34.99</span></td>
+                                <td><span class="price-badge">€49.99</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>6 months</strong></td>
+                                <td><span class="price-badge">€44.99</span></td>
+                                <td><span class="price-badge">€54.99</span></td>
+                                <td><span class="price-badge">€79.99</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>12 months</strong></td>
+                                <td><span class="price-badge">€74.99</span></td>
+                                <td><span class="price-badge">€88.99</span></td>
+                                <td><span class="price-badge">€119.99</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight" style="margin-top:24px">
+                    <p>We also offer a 24-month single-stream plan for €129.99. Review the current plan and final payment details before ordering.</p>
+                </div>
+
+                <!-- Interactive Stream Option Cards (Tabs) -->
+                <div class="pricing-tabs">
+                    <button type="button" class="pricing-tab active" data-pricing-tab="tab-stream-1"><i class="fas fa-tv"></i> One Active Stream</button>
+                    <button type="button" class="pricing-tab" data-pricing-tab="tab-stream-2"><i class="fas fa-layer-group"></i> Two Active Streams</button>
+                    <button type="button" class="pricing-tab" data-pricing-tab="tab-stream-3"><i class="fas fa-users"></i> Three Active Streams</button>
+                </div>
+
+                <!-- Tab 1: One Active Stream -->
+                <div id="tab-stream-1" class="pricing-panel active">
+                    <div class="pricing-grid">
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-bolt"></i> Best Start</span>
+                            <h4>1 Month</h4>
+                            <p class="stream-label">One Active Stream</p>
+                            <p class="amount">€9.99</p>
+                            <p class="kicker">Flexible monthly test</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>1 active stream</li>
+                                <li><i class="fas fa-check"></i>Italian &amp; global live channels</li>
+                                <li><i class="fas fa-check"></i>Movies &amp; series on-demand</li>
+                                <li><i class="fas fa-check"></i>TV guide (EPG) support</li>
+                                <li><i class="fas fa-check"></i>Fast setup guidance</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=140&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-single-connection/" target="_blank" rel="noopener">Subscribe Now</a>
+                        </div>
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-fire"></i> Popular</span>
+                            <h4>3 Months</h4>
+                            <p class="stream-label">One Active Stream</p>
+                            <p class="amount">€24.99</p>
+                            <p class="kicker">Quarterly plan</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>1 active stream</li>
+                                <li><i class="fas fa-check"></i>HD, FHD &amp; 4K quality</li>
+                                <li><i class="fas fa-check"></i>Live sports &amp; cinema</li>
+                                <li><i class="fas fa-check"></i>Anti-freeze stability</li>
+                                <li><i class="fas fa-check"></i>Instant activation</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=141&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-single-connection-3-months/" target="_blank" rel="noopener">Subscribe Now</a>
+                        </div>
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-gem"></i> Great Choice</span>
+                            <h4>6 Months</h4>
+                            <p class="stream-label">One Active Stream</p>
+                            <p class="amount">€44.99</p>
+                            <p class="kicker">Half-year entertainment</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>1 active stream</li>
+                                <li><i class="fas fa-check"></i>Regular VOD updates</li>
+                                <li><i class="fas fa-check"></i>All Italian channels</li>
+                                <li><i class="fas fa-check"></i>Priority server routing</li>
+                                <li><i class="fas fa-check"></i>24/7 technical support</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=143&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-single-connection-6-months/" target="_blank" rel="noopener">Subscribe Now</a>
+                        </div>
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-medal"></i> Best Value</span>
+                            <h4>12 Months</h4>
+                            <p class="stream-label">One Active Stream</p>
+                            <p class="amount">€74.99</p>
+                            <p class="kicker">~€6.25 / month equivalent</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>1 active stream</li>
+                                <li><i class="fas fa-check"></i>Full 12-month access</li>
+                                <li><i class="fas fa-check"></i>Premium live sports &amp; films</li>
+                                <li><i class="fas fa-check"></i>Electronic program guide</li>
+                                <li><i class="fas fa-check"></i>Dedicated customer care</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=142&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-single-connection-12-months/" target="_blank" rel="noopener">Subscribe Now</a>
+                        </div>
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-crown"></i> Max Savings</span>
+                            <h4>24 Months</h4>
+                            <p class="stream-label">One Active Stream</p>
+                            <p class="amount">€129.99</p>
+                            <p class="kicker">Extended 2-year access</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>1 active stream</li>
+                                <li><i class="fas fa-check"></i>Lowest long-term rate</li>
+                                <li><i class="fas fa-check"></i>Uninterrupted service</li>
+                                <li><i class="fas fa-check"></i>All supported players</li>
+                                <li><i class="fas fa-check"></i>VIP server stability</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=840&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-single-connection-2-years/" target="_blank" rel="noopener">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Two Active Streams -->
+                <div id="tab-stream-2" class="pricing-panel">
+                    <div class="pricing-grid four">
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-tv"></i> 2 Screens</span>
+                            <h4>1 Month</h4>
+                            <p class="stream-label">Two Active Streams</p>
+                            <p class="amount">€17.99</p>
+                            <p class="kicker">Monthly flexibility</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>2 active streams</li>
+                                <li><i class="fas fa-check"></i>Watch on 2 screens at once</li>
+                                <li><i class="fas fa-check"></i>Live TV &amp; on-demand library</li>
+                                <li><i class="fas fa-check"></i>Electronic program guide</li>
+                                <li><i class="fas fa-check"></i>Instant delivery</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=418&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-1-month/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-fire"></i> Popular Dual</span>
+                            <h4>3 Months</h4>
+                            <p class="stream-label">Two Active Streams</p>
+                            <p class="amount">€34.99</p>
+                            <p class="kicker">Popular 2-screen plan</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>2 active streams</li>
+                                <li><i class="fas fa-check"></i>Simultaneous household playback</li>
+                                <li><i class="fas fa-check"></i>Italian sports &amp; cinema</li>
+                                <li><i class="fas fa-check"></i>Anti-freeze technology</li>
+                                <li><i class="fas fa-check"></i>Full HD / 4K feeds</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=419&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-3-month/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-gem"></i> Save More</span>
+                            <h4>6 Months</h4>
+                            <p class="stream-label">Two Active Streams</p>
+                            <p class="amount">€54.99</p>
+                            <p class="kicker">Half-year 2-device access</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>2 active streams</li>
+                                <li><i class="fas fa-check"></i>Great multi-room setup</li>
+                                <li><i class="fas fa-check"></i>Italian channels &amp; audio</li>
+                                <li><i class="fas fa-check"></i>All player apps supported</li>
+                                <li><i class="fas fa-check"></i>Priority support</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=420&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-6-months/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-medal"></i> Best Value</span>
+                            <h4>12 Months</h4>
+                            <p class="stream-label">Two Active Streams</p>
+                            <p class="amount">€88.99</p>
+                            <p class="kicker">Best 2-device value</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>2 active streams</li>
+                                <li><i class="fas fa-check"></i>Full annual coverage</li>
+                                <li><i class="fas fa-check"></i>Complete VOD library &amp; series</li>
+                                <li><i class="fas fa-check"></i>High bandwidth stability</li>
+                                <li><i class="fas fa-check"></i>24/7 dedicated assistance</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=421&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-12-months/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Three Active Streams -->
+                <div id="tab-stream-3" class="pricing-panel">
+                    <div class="pricing-grid four">
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-users"></i> 3 Screens</span>
+                            <h4>1 Month</h4>
+                            <p class="stream-label">Three Active Streams</p>
+                            <p class="amount">€24.99</p>
+                            <p class="kicker">Monthly family access</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>3 active streams</li>
+                                <li><i class="fas fa-check"></i>3 independent playback screens</li>
+                                <li><i class="fas fa-check"></i>Live television &amp; on-demand</li>
+                                <li><i class="fas fa-check"></i>Program guide (EPG)</li>
+                                <li><i class="fas fa-check"></i>Instant activation</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=422&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-1-month-2/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-star"></i> Family Pick</span>
+                            <h4>3 Months</h4>
+                            <p class="stream-label">Three Active Streams</p>
+                            <p class="amount">€49.99</p>
+                            <p class="kicker">Popular family plan</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>3 active streams</li>
+                                <li><i class="fas fa-check"></i>Multi-room household entertainment</li>
+                                <li><i class="fas fa-check"></i>Italian &amp; international audio</li>
+                                <li><i class="fas fa-check"></i>Low-latency routing</li>
+                                <li><i class="fas fa-check"></i>Instant delivery</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=423&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-3-month-2/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card">
+                            <span class="value-pill"><i class="fas fa-gem"></i> Save More</span>
+                            <h4>6 Months</h4>
+                            <p class="stream-label">Three Active Streams</p>
+                            <p class="amount">€79.99</p>
+                            <p class="kicker">Half-year family access</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>3 active streams</li>
+                                <li><i class="fas fa-check"></i>Sports, kids &amp; movie channels</li>
+                                <li><i class="fas fa-check"></i>Electronic program guide</li>
+                                <li><i class="fas fa-check"></i>All devices supported</li>
+                                <li><i class="fas fa-check"></i>Fast support response</li>
+                            </ul>
+                            <a class="buy" href="https://a2ziptv.net?add-to-cart=424&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-6-months-2/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                        <div class="price-card featured">
+                            <span class="value-pill"><i class="fas fa-medal"></i> Best Value</span>
+                            <h4>12 Months</h4>
+                            <p class="stream-label">Three Active Streams</p>
+                            <p class="amount">€119.99</p>
+                            <p class="kicker">Best 3-device value</p>
+                            <div class="price-divider"></div>
+                            <ul>
+                                <li><i class="fas fa-check"></i>3 active streams</li>
+                                <li><i class="fas fa-check"></i>Full annual multi-screen coverage</li>
+                                <li><i class="fas fa-check"></i>Massive on-demand movie catalog</li>
+                                <li><i class="fas fa-check"></i>HD, FHD &amp; 4K picture quality</li>
+                                <li><i class="fas fa-check"></i>24/7 priority customer support</li>
+                            </ul>
+                            <a class="buy primary" href="https://a2ziptv.net?add-to-cart=425&amp;quantity=1&amp;e-redirect=https://a2ziptv.net/product/premium-multi-connection-12-months-2/" target="_blank" rel="noopener">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STREAM RULES & HOUSEHOLD SECTION -->
+        <section class="section muted-section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Streaming Guidance</span>
+                    <h2>Plan Your Screen Allowance</h2>
+                </div>
+
+                <div class="grid-2">
+                    <div class="list-card">
+                        <h3><i class="fas fa-play-circle" style="color:var(--red);margin-right:8px"></i> Start With One Month</h3>
+                        <p>Our monthly single-stream plan suits a viewer who wants a smaller first payment. Use your trial to check the service, then start with a short paid term.</p>
+                        <p style="margin-top:14px">A connection means one active stream. If you watch on your TV and later switch to your phone, stop the first stream before opening the second.</p>
+                    </div>
+
+                    <div class="list-card">
+                        <h3><i class="fas fa-users-viewfinder" style="color:var(--red);margin-right:8px"></i> Give Your Household More Viewing Options</h3>
+                        <p>Choose two connections if two people regularly watch different programs at once. Choose three if you need three active screens.</p>
+                        <p style="margin-top:14px">Installing a player on several devices does not add connections to your subscription. Ask us about account rules before planning use across different homes or networks.</p>
+                        <div style="margin-top:20px">
+                            <a class="btn btn-primary" href="https://a2ziptv.net/multi-connections/">Compare Our Multi-Connection Plans <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHANNELS, AUDIO AND SUBTITLES SECTION -->
+        <section class="section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Language &amp; Playback Verification</span>
+                    <h2>Check Your Italian Channels, <span class="gradient">Audio, and Subtitles</span></h2>
+                    <p>Your evening might start with local news and finish with a film in its original language. Choose your subscription around those preferences.</p>
+                    <p style="margin-top:12px">Send us the exact channels, movies, or series you want. For Italian-language viewing, tell us whether you need Italian audio, Italian subtitles, or both. These are separate features.</p>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="details-table">
+                        <thead>
+                            <tr>
+                                <th style="width:35%">Your viewing choice</th>
+                                <th>Details to check before buying</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Italian live television</strong></td>
+                                <td>Exact channel and required program</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Italian-dubbed movies</strong></td>
+                                <td>Italian audio on the selected title</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Original-language films</strong></td>
+                                <td>Original audio and preferred subtitles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Series</strong></td>
+                                <td>Season, episode, audio, and subtitle options</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Live sports</strong></td>
+                                <td>Specific event, available coverage, and commentary language</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight" style="margin-top:28px">
+                    <p>A country category does not confirm every channel. The same applies to subtitles: one episode may offer a language option that another does not.</p>
+                    <p>For football, motorsport, tennis, or another live event, share the competition and fixture you intend to watch. We can discuss availability before you select your plan. Our subscription should not be treated as a separate account for another streaming platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRIAL HOURS SECTION -->
+        <section class="section muted-section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Hands-on Evaluation</span>
+                    <h2>Try Our Service During Your Usual Viewing Hours</h2>
+                    <p>Our one-day trial helps you judge the service on the device and connection you will actually use.</p>
+                    <p style="margin-top:12px">Open our <a href="https://a2ziptv.net/free-trial/">free-trial page</a> and follow the Telegram request link. Tell us your device model and viewing requirements. Our team will provide the trial login and setup method.</p>
+                </div>
+
+                <div class="card" style="max-width:880px;margin:auto;padding:34px">
+                    <h3 style="font-size:1.4rem;margin-top:0;margin-bottom:18px"><i class="fas fa-clipboard-check" style="color:var(--red);margin-right:10px"></i> Complete Your Italian Viewing Check</h3>
+                    <p style="margin-bottom:20px">Choose three live channels and one on-demand title for a focused first test.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i><span>Open your selected channels. Check that the programs you need are available.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Choose your audio track. Listen for the Italian or original-language option you prefer.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Turn on subtitles. Check readability and whether the text matches the dialogue.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Read the program guide. Compare its listings with the broadcast and your device’s <a href="https://www.timeanddate.com/time/zone/italy" target="_blank" rel="noopener noreferrer">local time</a>.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Watch during your normal evening routine. Note repeated pauses, sound issues, or errors.</span></li>
+                    </ul>
+
+                    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--line)">
+                        <p>This gives you a useful record of your own setup. If something fails, send us the channel or title, device, player, and time of the issue.</p>
+                        <p style="margin-top:12px">Our service includes <a href="https://a2ziptv.net/vip-stream/">HD, Full HD, and 4K</a> options where available. Actual quality depends on the source stream, device, player, and internet connection.</p>
+                        <p style="margin-top:12px">Need to test two or three screens? Ask us about the trial’s connection allowance first.</p>
+                        <div class="actions" style="margin-top:24px">
+                            <a class="btn btn-primary" href="https://a2ziptv.net/free-trial/">Request Your One-Day Free Trial <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEVICE COMPATIBILITY SECTION -->
+        <section class="section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Broad Hardware Support</span>
+                    <h2>Use a Supported TV, Phone, or <span class="gradient">Streaming Device</span></h2>
+                    <p>We provide <a href="https://a2ziptv.net/setup-guide/">setup guidance</a> for supported Smart TVs, Fire TV devices, Android devices, iPhone, iPad, MAG boxes, PCs, and Macs.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-tv"></i></div>
+                        <h3>Check Your Device Model</h3>
+                        <p>Send us the exact model, especially for a Samsung or LG television or a box supplied by your internet provider. The available player and login method can vary.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-play-circle"></i></div>
+                        <h3>Separate Player Software</h3>
+                        <p>An <a href="https://a2ziptv.net/a2z-app/">IPTV player</a> opens your subscription on the device. Some players charge a separate software fee. A player license and TV subscription are different purchases.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-wifi"></i></div>
+                        <h3>Internet Connection</h3>
+                        <p>You also need your own internet connection. Our subscription prices do not include broadband or hardware.</p>
+                    </div>
+                </div>
+
+                <div class="actions" style="justify-content:center;margin-top:32px">
+                    <a class="btn btn-primary" href="https://a2ziptv.net/setup-guide/">Follow Our IPTV Setup Guide <i class="fas fa-book-open"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COST CALCULATION SECTION -->
+        <section class="section muted-section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Financial Clarity</span>
+                    <h2>Compare Your Full Cost Before You Buy</h2>
+                    <p>An affordable IPTV subscription in Italy should fit your viewing routine as well as your budget.</p>
+                </div>
+
+                <div class="highlight">
+                    <p>Our annual single-stream plan costs €74.99 upfront, equivalent to approximately €6.25 per month across 12 months. That monthly equivalent is a comparison figure, not a monthly payment option.</p>
+                    <p style="font-weight:700;color:#fff;margin-top:20px">Before choosing a term, add any costs for:</p>
+                    <ul class="check-list" style="margin-top:14px">
+                        <li><i class="fas fa-arrow-right" style="color:var(--red)"></i><span>A separate player license.</span></li>
+                        <li><i class="fas fa-arrow-right" style="color:var(--red)"></i><span>A streaming device you still need.</span></li>
+                        <li><i class="fas fa-arrow-right" style="color:var(--red)"></i><span>Extra internet spending caused by your setup.</span></li>
+                        <li><i class="fas fa-arrow-right" style="color:var(--red)"></i><span>Payment charges shown during your order.</span></li>
+                    </ul>
+                    <p style="margin-top:22px">Keep your existing broadband bill out of the extra-cost calculation unless the purchase changes it. Compare subscription options over the same period and for the same number of active screens.</p>
+                    <p style="margin-top:14px">Confirm the final amount, available payment methods, and renewal terms before paying.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT & TERMS SECTION -->
+        <section class="section">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Assistance &amp; Protection</span>
+                    <h2>Get Setup Help and Review Our Terms</h2>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-headset"></i></div>
+                        <h3>Customer Assistance</h3>
+                        <p>We offer support through the WhatsApp and Telegram links on our website for login, player setup, and playback questions.</p>
+                        <p style="margin-top:12px">Send us the error message and device details. Let us know whether the problem affects one channel, several channels, or all playback. Keep your login details out of public screenshots.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Seven-Day Refund Window</h3>
+                        <p>Our refund policy provides a seven-day request window when the service does not work as advertised. Requests are reviewed, and evidence or troubleshooting steps may be required.</p>
+                        <div class="actions" style="margin-top:26px">
+                            <a class="btn btn-primary" href="https://a2ziptv.net/contact/">Contact Our Support Team</a>
+                            <a class="btn btn-ghost" href="https://a2ziptv.net/refund_returns/">Read Our Refund Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section muted-section" id="faq">
+            <div class="wrap">
+                <div class="intro">
+                    <span class="tag">Help Center</span>
+                    <h2>Answers Before You Subscribe</h2>
+                    <p>Review the most common questions from Italian viewers before ordering or starting your trial.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">Can I try A2Z IPTV before buying in Italy? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes. We offer a one-day free trial. Share your device and viewing requirements, then test your selected channels, audio, subtitles, and playback before choosing a paid term.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Does our subscription include Italian audio and subtitles? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Availability depends on the channel or title. Send us your requirements and check the specific program during your trial. Italian audio, Italian subtitles, and an Italian app menu are separate features.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Can two people watch different programs at once? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes. Our two-connection plan permits two active streams. Choose three connections for three screens playing at once. Check the account rules with us if you plan to use different households or networks.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Does the listed price cover the whole subscription period? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            The table shows the full subscription price for each term in euros. For example, €74.99 covers the listed 12-month single-stream plan. Review the final order for any separate charges and confirm renewal terms.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Do I need a separate IPTV player or internet connection? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            You need your own internet connection, a supported device, and a compatible player or supported device setup. Some players require a separate license payment. We can help you check the requirements before ordering.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Can I request a refund if the service does not work as advertised? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            You can submit a request within seven days of purchase under our refund policy. Our team reviews the issue and may request screenshots, device details, or troubleshooting records. Approval is subject to the policy conditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CONVERSION SECTION -->
+        <section class="section">
+            <div class="wrap">
+                <div class="final">
+                    <h2>Choose Your IPTV Subscription in Italy</h2>
+                    <p>Bring us your viewing list. Choose the screens you need. Test the service during your usual viewing hours.</p>
+                    <p style="margin-top:-10px;margin-bottom:30px">At A2Z IPTV, our plans start at €9.99 for one month with one active stream. Compare your options and take the next step with our one-day free trial.</p>
+                    <div class="actions" style="justify-content:center">
+                        <a class="btn btn-primary" href="https://a2ziptv.net/subscriptions/">View Our Subscription Plans <i class="fas fa-arrow-right"></i></a>
+                        <a class="btn btn-ghost" href="https://a2ziptv.net/free-trial/">Start Your Free Trial <i class="fas fa-play"></i></a>
+                        <a class="btn btn-tg" href="https://t.me/A2ziPTV" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a class="btn btn-wa" href="https://wa.me/358414003335?text=Hi%2C%20I%20would%20like%20to%20ask%20about%20an%20IPTV%20subscription%20in%20Italy." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="note">
+                    Buying for an IPTV business? Explore our <a href="https://a2ziptv.net/iptv-restream/">IPTV restream service</a> first, or review our <a href="https://a2ziptv.net/reseller/">IPTV reseller options</a> for customer-account sales.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script>
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-question').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var item = this.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+
+        // Pricing Tabs Switcher
+        document.querySelectorAll('[data-pricing-tab]').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var target = this.getAttribute('data-pricing-tab');
+                document.querySelectorAll('[data-pricing-tab]').forEach(function(tab) {
+                    tab.classList.remove('active');
+                });
+                document.querySelectorAll('.pricing-panel').forEach(function(panel) {
+                    panel.classList.remove('active');
+                });
+                this.classList.add('active');
+                var panel = document.getElementById(target);
+                if (panel) {
+                    panel.classList.add('active');
+                }
+            });
+        });
+    </script>
+</div>
